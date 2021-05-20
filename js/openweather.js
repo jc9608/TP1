@@ -1,6 +1,6 @@
 // Documentación en https://openweathermap.org/current
 var c = console.log
-const api_key = "b65aa55a24111632c6d14b51505ff723",
+const api_key = "",
 	ciudadBuscada = document.getElementById("ciudadBuscada"),
 	btnSearch = document.getElementById("btnSearch"),
 	displayClima = document.getElementById("displayClima"),
