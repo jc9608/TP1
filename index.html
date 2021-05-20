@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1"
+		/>
+		<title>OpenWeather Api - 1er TP - PWA - Julián Cabral - DWN3A - 2021</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h1>Hey! What's the Weather like?</h1>
+						<form class="input-group mb-3">
+							<label for="ciudadBuscada" class="col-12 mt-4 mb-3">
+								Por favor, ingresá una ciudad acá abajo para consultar el clima
+								en tiempo real
+							</label>
+
+							<input
+								type="text"
+								id="ciudadBuscada"
+								class="form-control"
+								value=""
+								placeholder="Ingresa acá tu ciudad"
+								required
+							/>
+							<div class="input-group-append">
+								<button
+									id="btnSearch"
+									class="btn btn-outline-secondary"
+									type="button"
+								>
+									Consultar
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="mb-5">Ciudad: <span id="displayCiudad"></span></h2>
+						<h3>Temperatura: <span id="tempActual"></span></h3>
+						<h3>Sensación Térmica: <span id="sensTermica"></span></h3>
+						<h3>Condición del clima: <span id="displayClima"></span></h3>
+						<img id="iconoClima" />
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<h2 class="text-center mb-5 pt-5 tit2">Más información</h2>
+			<div class="wrapper">
+				<div class="card">
+					<div class="card-header">Temperatura Mínima</div>
+					<div class="card-body">
+						<p class="card-text" id="tempMin"></p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">Temperatura Máxima</div>
+					<div class="card-body">
+						<p class="card-text" id="tempMax"></p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">Humedad</div>
+					<div class="card-body">
+						<p class="card-text" id="humedad"></p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">Presión Atmosférica</div>
+					<div class="card-body">
+						<p class="card-text" id="presionAtm"></p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">Velocidad Del Viento</div>
+					<div class="card-body">
+						<p class="card-text" id="velViento"></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>Alumno: Julián Cabral</li>
+				<li>TP1 - PWA</li>
+				<li>Comisión: DWN3A</li>
+				<li>Año: 2021</li>
+			</ul>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/openweather.js"></script>
+	</body>
+</html>
